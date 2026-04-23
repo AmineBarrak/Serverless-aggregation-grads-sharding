@@ -157,10 +157,6 @@ pdflatex 00.main2.tex
 | RQ2 | Near-linear latency scaling: 16.2× speedup at M=16; S3 I/O accounts for >99% of aggregation time |
 | RQ3 | Cost crossover at ~500 MB; GradsSharding 2.7× cheaper at VGG-16; only viable architecture beyond ~3 GB gradient size |
 
-## License
-
-[To be specified]
-
 ## Contact
 
 Amine Barrak — aminebarrak@gmail.com
