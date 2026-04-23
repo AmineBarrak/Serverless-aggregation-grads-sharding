@@ -1,0 +1,385 @@
+{
+  "model": "VGG-16",
+  "gradient_mb": 512.3196182250977,
+  "num_shards": 2,
+  "shard_mb": 256.1598091125488,
+  "memory_mb": 3008,
+  "num_clients": 20,
+  "num_warm_invocations": 14,
+  "wall_clock_ms": {
+    "mean": 97777.5605570712,
+    "std": 12282.602542009423
+  },
+  "aggregation_ms": {
+    "mean": 94846.8230902142,
+    "std": 12228.569221173708
+  },
+  "s3_read_ms": {
+    "mean": 93854.45667750004,
+    "std": 12227.91895899706
+  },
+  "compute_ms": {
+    "mean": 998.7056542856444,
+    "std": 4.979506631497333
+  },
+  "s3_write_ms": {
+    "mean": 2972.7176752857604,
+    "std": 361.4620474697837
+  },
+  "s3_ops_per_round": 42,
+  "cost_per_round": {
+    "lambda_compute": 0.00928710333508633,
+    "s3_io": 2.6000000000000002e-05,
+    "total": 0.00931310333508633
+  },
+  "cost_per_1k_rounds": 9.31310333508633,
+  "cold_start_ms": 100814.6486380001,
+  "s3_throughput_mbps": 54.586605299470804,
+  "all_results": [
+    {
+      "round_id": 0,
+      "rep": 0,
+      "wall_clock_ms": 100814.6486380001,
+      "max_shard_agg_ms": 96464.998713,
+      "shard_agg_times_ms": [
+        86911.76091200032,
+        96464.998713
+      ],
+      "shard_s3_read_times_ms": [
+        85925.25529299928,
+        95460.90892400002
+      ],
+      "shard_compute_times_ms": [
+        986.5056190010364,
+        1004.089788999976
+      ],
+      "shard_s3_write_times_ms": [
+        2613.304024000172,
+        2606.180867999967
+      ],
+      "cold_start": true
+    },
+    {
+      "round_id": 0,
+      "rep": 1,
+      "wall_clock_ms": 102630.74831599988,
+      "max_shard_agg_ms": 99973.2288829996,
+      "shard_agg_times_ms": [
+        90274.26021299999,
+        99973.2288829996
+      ],
+      "shard_s3_read_times_ms": [
+        89266.08910699992,
+        98983.35654200127
+      ],
+      "shard_compute_times_ms": [
+        1008.1711060000671,
+        989.8723409983213
+      ],
+      "shard_s3_write_times_ms": [
+        2668.195482999977,
+        2606.2622389999888
+      ],
+      "cold_start": false
+    },
+    {
+      "round_id": 0,
+      "rep": 2,
+      "wall_clock_ms": 103491.87451000034,
+      "max_shard_agg_ms": 100794.450234,
+      "shard_agg_times_ms": [
+        86110.79463100032,
+        100794.450234
+      ],
+      "shard_s3_read_times_ms": [
+        85127.63968000036,
+        99790.82197299994
+      ],
+      "shard_compute_times_ms": [
+        983.1549509999604,
+        1003.6282610000635
+      ],
+      "shard_s3_write_times_ms": [
+        2648.1970120003098,
+        2661.1424409999813
+      ],
+      "cold_start": false
+    },
+    {
+      "round_id": 0,
+      "rep": 3,
+      "wall_clock_ms": 90529.56721400005,
+      "max_shard_agg_ms": 87653.39102099994,
+      "shard_agg_times_ms": [
+        87653.39102099994,
+        72332.01502100019
+      ],
+      "shard_s3_read_times_ms": [
+        86649.41522300018,
+        71344.31769300136
+      ],
+      "shard_compute_times_ms": [
+        1003.9757979997667,
+        987.6973279988306
+      ],
+      "shard_s3_write_times_ms": [
+        2829.034639999918,
+        2604.708424000364
+      ],
+      "cold_start": false
+    },
+    {
+      "round_id": 0,
+      "rep": 4,
+      "wall_clock_ms": 87589.27572099946,
+      "max_shard_agg_ms": 84796.59799000001,
+      "shard_agg_times_ms": [
+        84796.59799000001,
+        72487.5065639999
+      ],
+      "shard_s3_read_times_ms": [
+        83800.82042200002,
+        71496.3494980002
+      ],
+      "shard_compute_times_ms": [
+        995.7775679999904,
+        991.1570659996942
+      ],
+      "shard_s3_write_times_ms": [
+        2753.121389000057,
+        2621.3172969996776
+      ],
+      "cold_start": false
+    },
+    {
+      "round_id": 1,
+      "rep": 0,
+      "wall_clock_ms": 117957.46448600039,
+      "max_shard_agg_ms": 114710.996045,
+      "shard_agg_times_ms": [
+        114710.996045,
+        93667.63487999969
+      ],
+      "shard_s3_read_times_ms": [
+        113722.0081500002,
+        92677.45131300035
+      ],
+      "shard_compute_times_ms": [
+        988.9878949998092,
+        990.1835669993452
+      ],
+      "shard_s3_write_times_ms": [
+        3206.1974949999694,
+        2614.377418999993
+      ],
+      "cold_start": false
+    },
+    {
+      "round_id": 1,
+      "rep": 1,
+      "wall_clock_ms": 116575.88812999893,
+      "max_shard_agg_ms": 113775.84756499993,
+      "shard_agg_times_ms": [
+        113775.84756499993,
+        102049.8221730004
+      ],
+      "shard_s3_read_times_ms": [
+        112774.572486,
+        101065.63644700008
+      ],
+      "shard_compute_times_ms": [
+        1001.2750789999263,
+        984.1857260003162
+      ],
+      "shard_s3_write_times_ms": [
+        2763.459022999996,
+        2687.6097370000025
+      ],
+      "cold_start": false
+    },
+    {
+      "round_id": 1,
+      "rep": 2,
+      "wall_clock_ms": 103978.9644600005,
+      "max_shard_agg_ms": 100042.63301000003,
+      "shard_agg_times_ms": [
+        100042.63301000003,
+        88730.14027399995
+      ],
+      "shard_s3_read_times_ms": [
+        99048.60034800004,
+        87744.10594099891
+      ],
+      "shard_compute_times_ms": [
+        994.0326619999978,
+        986.0343330010364
+      ],
+      "shard_s3_write_times_ms": [
+        3894.248710999932,
+        2576.3963780000267
+      ],
+      "cold_start": false
+    },
+    {
+      "round_id": 1,
+      "rep": 3,
+      "wall_clock_ms": 91234.3863999995,
+      "max_shard_agg_ms": 88631.31136499987,
+      "shard_agg_times_ms": [
+        84594.75976700014,
+        88631.31136499987
+      ],
+      "shard_s3_read_times_ms": [
+        83608.08552900153,
+        87633.32361300036
+      ],
+      "shard_compute_times_ms": [
+        986.6742379986099,
+        997.9877519995061
+      ],
+      "shard_s3_write_times_ms": [
+        2921.423453999978,
+        2565.7320959999197
+      ],
+      "cold_start": false
+    },
+    {
+      "round_id": 1,
+      "rep": 4,
+      "wall_clock_ms": 80548.76246999993,
+      "max_shard_agg_ms": 77601.72429399972,
+      "shard_agg_times_ms": [
+        77601.72429399972,
+        72644.9153640001
+      ],
+      "shard_s3_read_times_ms": [
+        76614.4821980006,
+        71647.69543399916
+      ],
+      "shard_compute_times_ms": [
+        987.2420959991287,
+        997.2199300009379
+      ],
+      "shard_s3_write_times_ms": [
+        2893.5598790003496,
+        3176.388794000104
+      ],
+      "cold_start": false
+    },
+    {
+      "round_id": 2,
+      "rep": 0,
+      "wall_clock_ms": 107370.43531500058,
+      "max_shard_agg_ms": 104584.96831499998,
+      "shard_agg_times_ms": [
+        104584.96831499998,
+        92561.38351800019
+      ],
+      "shard_s3_read_times_ms": [
+        103598.84801699899,
+        91566.45921100039
+      ],
+      "shard_compute_times_ms": [
+        986.1202980009839,
+        994.9243069998047
+      ],
+      "shard_s3_write_times_ms": [
+        2750.270478999937,
+        2601.3089989999116
+      ],
+      "cold_start": false
+    },
+    {
+      "round_id": 2,
+      "rep": 1,
+      "wall_clock_ms": 108875.71128699892,
+      "max_shard_agg_ms": 105908.39625299987,
+      "shard_agg_times_ms": [
+        100005.25008400017,
+        105908.39625299987
+      ],
+      "shard_s3_read_times_ms": [
+        99005.22343800003,
+        104925.98010900065
+      ],
+      "shard_compute_times_ms": [
+        1000.026646000144,
+        982.4161439992167
+      ],
+      "shard_s3_write_times_ms": [
+        2582.4653209999724,
+        2928.5853330002283
+      ],
+      "cold_start": false
+    },
+    {
+      "round_id": 2,
+      "rep": 2,
+      "wall_clock_ms": 95094.14835899952,
+      "max_shard_agg_ms": 92178.70737800057,
+      "shard_agg_times_ms": [
+        92178.70737800057,
+        87103.51634899985
+      ],
+      "shard_s3_read_times_ms": [
+        91191.18940499902,
+        86100.73060800004
+      ],
+      "shard_compute_times_ms": [
+        987.5179730015516,
+        1002.7857409998105
+      ],
+      "shard_s3_write_times_ms": [
+        2873.9850960000695,
+        2634.0728729999228
+      ],
+      "cold_start": false
+    },
+    {
+      "round_id": 2,
+      "rep": 3,
+      "wall_clock_ms": 83601.12847399978,
+      "max_shard_agg_ms": 80956.11278399974,
+      "shard_agg_times_ms": [
+        77342.66726300007,
+        80956.11278399974
+      ],
+      "shard_s3_read_times_ms": [
+        76341.96556400001,
+        79968.95612300068
+      ],
+      "shard_compute_times_ms": [
+        1000.7016990000557,
+        987.156660999055
+      ],
+      "shard_s3_write_times_ms": [
+        2579.742249999981,
+        2602.3994180004593
+      ],
+      "cold_start": false
+    },
+    {
+      "round_id": 2,
+      "rep": 4,
+      "wall_clock_ms": 79407.49265699924,
+      "max_shard_agg_ms": 76247.1581259997,
+      "shard_agg_times_ms": [
+        76247.1581259997,
+        70649.73531299984
+      ],
+      "shard_s3_read_times_ms": [
+        75260.01887599887,
+        69658.54626900023
+      ],
+      "shard_compute_times_ms": [
+        987.1392500008369,
+        991.1890439996059
+      ],
+      "shard_s3_write_times_ms": [
+        3113.487595999686,
+        3589.595698000039
+      ],
+      "cold_start": false
+    }
+  ]
+}

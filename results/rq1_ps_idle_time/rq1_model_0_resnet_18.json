@@ -1,0 +1,27 @@
+{
+  "model_name": "ResNet-18",
+  "num_parameters": 11181642,
+  "gradient_size_mb": 42.7,
+  "config": {
+    "num_clients": 20,
+    "local_epochs": 5,
+    "samples_per_client": 2500,
+    "batch_size": 32,
+    "local_steps": 395
+  },
+  "client_training": {
+    "total_mean_ms": 2153.62,
+    "total_std_ms": 0.82,
+    "per_step_ms": 5.45
+  },
+  "aggregation": {
+    "mean_ms": 544.31,
+    "std_ms": 2.93
+  },
+  "round_timing": {
+    "t_train_ms": 2153.62,
+    "t_agg_ms": 544.31,
+    "t_round_ms": 2697.93,
+    "ps_idle_pct": 79.8
+  }
+}

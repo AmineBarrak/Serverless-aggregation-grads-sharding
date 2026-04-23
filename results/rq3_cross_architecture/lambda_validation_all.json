@@ -1,0 +1,60 @@
+{
+  "experiment": "Lambda Validation - Complete Results",
+  "results": {
+    "resnet18_m1": {
+      "model": "ResNet-18", "grad_mb": 42.7, "shards": 1, "memory_mb": 512,
+      "wall_clock_ms": {"mean": 15357, "std": 1800},
+      "aggregation_ms": {"mean": 13902, "std": 1827},
+      "s3_read_ms": {"mean": 12581, "std": 1834},
+      "compute_ms": {"mean": 1321, "std": 29},
+      "s3_write_ms": {"mean": 1380, "std": 200},
+      "cost_per_round": 0.000129,
+      "cost_per_1k": 0.1288,
+      "cold_start_ms": 24710
+    },
+    "vgg16_m1": {
+      "model": "VGG-16", "grad_mb": 512.3, "shards": 1, "memory_mb": 3008,
+      "wall_clock_ms": {"mean": 168720, "std": 20220},
+      "aggregation_ms": {"mean": 162803, "std": 19708},
+      "s3_read_ms": {"mean": 160828, "std": 19711},
+      "compute_ms": {"mean": 1975, "std": 5},
+      "s3_write_ms": {"mean": 5676, "std": 500},
+      "cost_per_round": 0.007984,
+      "cost_per_1k": 7.9836,
+      "cold_start_ms": 226023
+    },
+    "vgg16_m4": {
+      "model": "VGG-16", "grad_mb": 512.3, "shards": 4, "memory_mb": 3008,
+      "wall_clock_ms": {"mean": 39851, "std": 3932},
+      "aggregation_ms": {"mean": 37564, "std": 3174},
+      "s3_read_ms": {"mean": 37037, "std": 3185},
+      "compute_ms": {"mean": 639, "std": 18},
+      "s3_write_ms": {"mean": 1350, "std": 100},
+      "cost_per_round": 0.007408,
+      "cost_per_1k": 7.4083,
+      "cold_start_ms": 50860
+    },
+    "gpt2_medium_m4": {
+      "model": "GPT-2 Medium", "grad_mb": 1353.5, "shards": 4, "memory_mb": 2048,
+      "wall_clock_ms": {"mean": 121680, "std": 14532},
+      "aggregation_ms": {"mean": 114286, "std": 13487},
+      "s3_read_ms": {"mean": 112978, "std": 13483},
+      "compute_ms": {"mean": 1326, "std": 10},
+      "s3_write_ms": {"mean": 3500, "std": 300},
+      "cost_per_round": 0.015290,
+      "cost_per_1k": 15.2901,
+      "cold_start_ms": 112912
+    },
+    "gpt2_large_m4": {
+      "model": "GPT-2 Large", "grad_mb": 2952.7, "shards": 4, "memory_mb": 3008,
+      "wall_clock_ms": {"mean": 266942, "std": 26128},
+      "aggregation_ms": {"mean": 257770, "std": 26699},
+      "s3_read_ms": {"mean": 254896, "std": 26695},
+      "compute_ms": {"mean": 2900, "std": 25},
+      "s3_write_ms": {"mean": 5800, "std": 400},
+      "cost_per_round": 0.050532,
+      "cost_per_1k": 50.5321,
+      "cold_start_ms": 314935
+    }
+  }
+}

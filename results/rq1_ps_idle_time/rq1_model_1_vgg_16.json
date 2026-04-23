@@ -1,0 +1,27 @@
+{
+  "model_name": "VGG-16",
+  "num_parameters": 134301514,
+  "gradient_size_mb": 512.3,
+  "config": {
+    "num_clients": 20,
+    "local_epochs": 5,
+    "samples_per_client": 2500,
+    "batch_size": 32,
+    "local_steps": 395
+  },
+  "client_training": {
+    "total_mean_ms": 55562.25,
+    "total_std_ms": 14.29,
+    "per_step_ms": 140.66
+  },
+  "aggregation": {
+    "mean_ms": 217.99,
+    "std_ms": 2.68
+  },
+  "round_timing": {
+    "t_train_ms": 55562.25,
+    "t_agg_ms": 217.99,
+    "t_round_ms": 55780.25,
+    "ps_idle_pct": 99.6
+  }
+}

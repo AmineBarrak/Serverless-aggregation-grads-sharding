@@ -1,0 +1,88 @@
+{
+  "system": "grads-sharding",
+  "num_clients": 20,
+  "num_rounds": 10,
+  "num_shards": 1,
+  "model_name": "resnet18",
+  "elapsed_time_s": 269.39814734458923,
+  "avg_round_latency_s": 26.70849232673645,
+  "avg_aggregation_latency_s": 1.1486657381057739,
+  "avg_peak_memory_mb": 898.8295440673828,
+  "total_cost_usd": 1.0638853857948424e-05,
+  "cost_breakdown": {
+    "lambda_cost_usd": 1.0638853857948424e-05,
+    "total_cost_usd": 1.0638853857948424e-05
+  },
+  "per_round": [
+    {
+      "round": 0,
+      "latency_s": 26.85913634300232,
+      "aggregation_latency_s": 1.6278321743011475,
+      "peak_memory_mb": 898.8295440673828,
+      "cold_start": false
+    },
+    {
+      "round": 1,
+      "latency_s": 28.690495014190674,
+      "aggregation_latency_s": 0.8418512344360352,
+      "peak_memory_mb": 898.8295440673828,
+      "cold_start": false
+    },
+    {
+      "round": 2,
+      "latency_s": 26.012297868728638,
+      "aggregation_latency_s": 0.7423410415649414,
+      "peak_memory_mb": 898.8295440673828,
+      "cold_start": false
+    },
+    {
+      "round": 3,
+      "latency_s": 25.811681270599365,
+      "aggregation_latency_s": 1.175778865814209,
+      "peak_memory_mb": 898.8295440673828,
+      "cold_start": false
+    },
+    {
+      "round": 4,
+      "latency_s": 26.7524676322937,
+      "aggregation_latency_s": 0.6675493717193604,
+      "peak_memory_mb": 898.8295440673828,
+      "cold_start": false
+    },
+    {
+      "round": 5,
+      "latency_s": 27.068081378936768,
+      "aggregation_latency_s": 0.8066921234130859,
+      "peak_memory_mb": 898.8295440673828,
+      "cold_start": false
+    },
+    {
+      "round": 6,
+      "latency_s": 26.048252820968628,
+      "aggregation_latency_s": 1.6120567321777344,
+      "peak_memory_mb": 898.8295440673828,
+      "cold_start": false
+    },
+    {
+      "round": 7,
+      "latency_s": 28.092135906219482,
+      "aggregation_latency_s": 1.6479003429412842,
+      "peak_memory_mb": 898.8295440673828,
+      "cold_start": false
+    },
+    {
+      "round": 8,
+      "latency_s": 26.34207558631897,
+      "aggregation_latency_s": 0.8260791301727295,
+      "peak_memory_mb": 898.8295440673828,
+      "cold_start": false
+    },
+    {
+      "round": 9,
+      "latency_s": 25.408299446105957,
+      "aggregation_latency_s": 1.538576364517212,
+      "peak_memory_mb": 898.8295440673828,
+      "cold_start": false
+    }
+  ]
+}

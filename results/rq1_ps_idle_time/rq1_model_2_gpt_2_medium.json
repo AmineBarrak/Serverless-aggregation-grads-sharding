@@ -1,0 +1,27 @@
+{
+  "model_name": "GPT-2 Medium",
+  "num_parameters": 354823168,
+  "gradient_size_mb": 1353.5,
+  "config": {
+    "num_clients": 20,
+    "local_epochs": 5,
+    "samples_per_client": 2500,
+    "batch_size": 8,
+    "local_steps": 395
+  },
+  "client_training": {
+    "total_mean_ms": 93919.34,
+    "total_std_ms": 11.33,
+    "per_step_ms": 237.77
+  },
+  "aggregation": {
+    "mean_ms": 1071.89,
+    "std_ms": 8.76
+  },
+  "round_timing": {
+    "t_train_ms": 93919.34,
+    "t_agg_ms": 1071.89,
+    "t_round_ms": 94991.22,
+    "ps_idle_pct": 98.9
+  }
+}

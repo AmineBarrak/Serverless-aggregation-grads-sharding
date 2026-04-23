@@ -1,0 +1,123 @@
+{
+  "experiment": "RQ1: Parameter Server Idle Time",
+  "description": "Measures the fraction of each FL round where the parameter server is idle (waiting for clients to finish local training). High idle ratios motivate serverless aggregation.",
+  "fl_config": {
+    "num_clients_N": 20,
+    "local_epochs_E": 5,
+    "dataset": "CIFAR-10 (IID partition)",
+    "samples_per_client": 2500,
+    "batch_size_vision": 32,
+    "batch_size_lm": 8,
+    "local_steps": 395
+  },
+  "results": [
+    {
+      "model_name": "ResNet-18",
+      "num_parameters": 11181642,
+      "gradient_size_mb": 42.7,
+      "config": {
+        "num_clients": 20,
+        "local_epochs": 5,
+        "samples_per_client": 2500,
+        "batch_size": 32,
+        "local_steps": 395
+      },
+      "client_training": {
+        "total_mean_ms": 2153.62,
+        "total_std_ms": 0.82,
+        "per_step_ms": 5.45
+      },
+      "aggregation": {
+        "mean_ms": 544.31,
+        "std_ms": 2.93
+      },
+      "round_timing": {
+        "t_train_ms": 2153.62,
+        "t_agg_ms": 544.31,
+        "t_round_ms": 2697.93,
+        "ps_idle_pct": 79.8
+      }
+    },
+    {
+      "model_name": "VGG-16",
+      "num_parameters": 134301514,
+      "gradient_size_mb": 512.3,
+      "config": {
+        "num_clients": 20,
+        "local_epochs": 5,
+        "samples_per_client": 2500,
+        "batch_size": 32,
+        "local_steps": 395
+      },
+      "client_training": {
+        "total_mean_ms": 55562.25,
+        "total_std_ms": 14.29,
+        "per_step_ms": 140.66
+      },
+      "aggregation": {
+        "mean_ms": 217.99,
+        "std_ms": 2.68
+      },
+      "round_timing": {
+        "t_train_ms": 55562.25,
+        "t_agg_ms": 217.99,
+        "t_round_ms": 55780.25,
+        "ps_idle_pct": 99.6
+      }
+    },
+    {
+      "model_name": "GPT-2 Medium",
+      "num_parameters": 354823168,
+      "gradient_size_mb": 1353.5,
+      "config": {
+        "num_clients": 20,
+        "local_epochs": 5,
+        "samples_per_client": 2500,
+        "batch_size": 8,
+        "local_steps": 395
+      },
+      "client_training": {
+        "total_mean_ms": 93919.34,
+        "total_std_ms": 11.33,
+        "per_step_ms": 237.77
+      },
+      "aggregation": {
+        "mean_ms": 1071.89,
+        "std_ms": 8.76
+      },
+      "round_timing": {
+        "t_train_ms": 93919.34,
+        "t_agg_ms": 1071.89,
+        "t_round_ms": 94991.22,
+        "ps_idle_pct": 98.9
+      }
+    },
+    {
+      "model_name": "GPT-2 Large",
+      "num_parameters": 774030080,
+      "gradient_size_mb": 2952.7,
+      "config": {
+        "num_clients": 20,
+        "local_epochs": 5,
+        "samples_per_client": 2500,
+        "batch_size": 8,
+        "local_steps": 395
+      },
+      "client_training": {
+        "total_mean_ms": 187514.51,
+        "total_std_ms": 95.24,
+        "per_step_ms": 474.72
+      },
+      "aggregation": {
+        "mean_ms": 1700.9,
+        "std_ms": 47.41
+      },
+      "round_timing": {
+        "t_train_ms": 187514.51,
+        "t_agg_ms": 1700.9,
+        "t_round_ms": 189215.41,
+        "ps_idle_pct": 99.1
+      }
+    }
+  ]
+}

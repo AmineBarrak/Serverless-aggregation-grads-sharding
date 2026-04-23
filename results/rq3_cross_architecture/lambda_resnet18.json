@@ -1,0 +1,273 @@
+{
+  "model_name": "resnet18",
+  "gradient_size_mb": 42.7,
+  "num_params": 11181642,
+  "num_shards": 1,
+  "memory_mb": 512,
+  "num_clients": 20,
+  "num_warm_invocations": 14,
+  "wall_clock_ms": {
+    "mean": 15357.241478428545,
+    "std": 1799.649225850186
+  },
+  "aggregation_ms": {
+    "mean": 13901.583494571427,
+    "std": 1826.8719087120235
+  },
+  "s3_read_ms": {
+    "mean": 12580.59251978569,
+    "std": 1833.6341906097289
+  },
+  "compute_ms": {
+    "mean": 1320.990974785736,
+    "std": 29.471413881626212
+  },
+  "cost_per_invocation": {
+    "mean": 0.0001288467608144868,
+    "std": 1.522396302046534e-05
+  },
+  "cost_per_1000_rounds": 0.12884676081448682,
+  "all_results": [
+    {
+      "round_id": 0,
+      "rep": 0,
+      "wall_clock_ms": 24710.08519499992,
+      "lambda_total_ms": 22565.997533,
+      "aggregation_ms": 20978.564971999996,
+      "s3_read_ms": 19205.51893099999,
+      "compute_ms": 1773.046041000005,
+      "s3_write_ms": 1587.4126880000006,
+      "cost": {
+        "lambda_compute": 0.0001748217244094162,
+        "s3_io": 1.3000000000000001e-05,
+        "total": 0.00018782172440941618
+      },
+      "cold_start": true
+    },
+    {
+      "round_id": 0,
+      "rep": 1,
+      "wall_clock_ms": 16436.118168000576,
+      "lambda_total_ms": 16381.618392999997,
+      "aggregation_ms": 15098.774820000002,
+      "s3_read_ms": 13728.919514999994,
+      "compute_ms": 1369.8553050000082,
+      "s3_write_ms": 1282.8231769999975,
+      "cost": {
+        "lambda_compute": 0.00012582337514624703,
+        "s3_io": 1.3000000000000001e-05,
+        "total": 0.00013882337514624702
+      },
+      "cold_start": false
+    },
+    {
+      "round_id": 0,
+      "rep": 2,
+      "wall_clock_ms": 14556.395765999696,
+      "lambda_total_ms": 14511.457935999999,
+      "aggregation_ms": 13215.260028000002,
+      "s3_read_ms": 11909.636067000016,
+      "compute_ms": 1305.6239609999866,
+      "s3_write_ms": 1296.181615000009,
+      "cost": {
+        "lambda_compute": 0.00011012738715433383,
+        "s3_io": 1.3000000000000001e-05,
+        "total": 0.00012312738715433382
+      },
+      "cold_start": false
+    },
+    {
+      "round_id": 0,
+      "rep": 3,
+      "wall_clock_ms": 14810.22104799922,
+      "lambda_total_ms": 14784.198843999988,
+      "aggregation_ms": 13511.741029999996,
+      "s3_read_ms": 12156.285295000003,
+      "compute_ms": 1355.4557349999923,
+      "s3_write_ms": 1272.4396620000107,
+      "cost": {
+        "lambda_compute": 0.00011259806711235048,
+        "s3_io": 1.3000000000000001e-05,
+        "total": 0.00012559806711235047
+      },
+      "cold_start": false
+    },
+    {
+      "round_id": 0,
+      "rep": 4,
+      "wall_clock_ms": 16702.45901100043,
+      "lambda_total_ms": 16678.217929000013,
+      "aggregation_ms": 15026.866618,
+      "s3_read_ms": 13689.303600999934,
+      "compute_ms": 1337.5630170000659,
+      "s3_write_ms": 1651.333907999998,
+      "cost": {
+        "lambda_compute": 0.0001252241389311103,
+        "s3_io": 1.3000000000000001e-05,
+        "total": 0.0001382241389311103
+      },
+      "cold_start": false
+    },
+    {
+      "round_id": 1,
+      "rep": 0,
+      "wall_clock_ms": 19366.267489000165,
+      "lambda_total_ms": 19341.807058000002,
+      "aggregation_ms": 18067.156783000002,
+      "s3_read_ms": 16788.519904999972,
+      "compute_ms": 1278.6368780000303,
+      "s3_write_ms": 1274.6333409999977,
+      "cost": {
+        "lambda_compute": 0.00015055994097761308,
+        "s3_io": 1.3000000000000001e-05,
+        "total": 0.00016355994097761307
+      },
+      "cold_start": false
+    },
+    {
+      "round_id": 1,
+      "rep": 1,
+      "wall_clock_ms": 14566.755569999259,
+      "lambda_total_ms": 14538.192109999996,
+      "aggregation_ms": 12875.928421999986,
+      "s3_read_ms": 11582.105037999967,
+      "compute_ms": 1293.8233840000194,
+      "s3_write_ms": 1662.244524999977,
+      "cost": {
+        "lambda_compute": 0.0001072996181154736,
+        "s3_io": 1.3000000000000001e-05,
+        "total": 0.00012029961811547361
+      },
+      "cold_start": false
+    },
+    {
+      "round_id": 1,
+      "rep": 2,
+      "wall_clock_ms": 14225.672021000719,
+      "lambda_total_ms": 14179.927086000022,
+      "aggregation_ms": 12188.005850999985,
+      "s3_read_ms": 10827.929216999963,
+      "compute_ms": 1360.0766340000228,
+      "s3_write_ms": 1991.90450399999,
+      "cost": {
+        "lambda_compute": 0.00010156691855843073,
+        "s3_io": 1.3000000000000001e-05,
+        "total": 0.00011456691855843073
+      },
+      "cold_start": false
+    },
+    {
+      "round_id": 1,
+      "rep": 3,
+      "wall_clock_ms": 13342.144725999788,
+      "lambda_total_ms": 13320.927557000005,
+      "aggregation_ms": 12051.484504000002,
+      "s3_read_ms": 10766.468874000026,
+      "compute_ms": 1285.0156299999762,
+      "s3_write_ms": 1269.4258930000046,
+      "cost": {
+        "lambda_compute": 0.00010042923839140842,
+        "s3_io": 1.3000000000000001e-05,
+        "total": 0.00011342923839140842
+      },
+      "cold_start": false
+    },
+    {
+      "round_id": 1,
+      "rep": 4,
+      "wall_clock_ms": 13337.635574999695,
+      "lambda_total_ms": 13293.492165999993,
+      "aggregation_ms": 12078.514802000002,
+      "s3_read_ms": 10736.619236000024,
+      "compute_ms": 1341.8955659999774,
+      "s3_write_ms": 1214.9599410000178,
+      "cost": {
+        "lambda_compute": 0.00010065449132524671,
+        "s3_io": 1.3000000000000001e-05,
+        "total": 0.00011365449132524672
+      },
+      "cold_start": false
+    },
+    {
+      "round_id": 2,
+      "rep": 0,
+      "wall_clock_ms": 18838.290520000555,
+      "lambda_total_ms": 18815.342286000003,
+      "aggregation_ms": 17425.059146999985,
+      "s3_read_ms": 16128.606683999948,
+      "compute_ms": 1296.4524630000378,
+      "s3_write_ms": 1390.2653640000153,
+      "cost": {
+        "lambda_compute": 0.00014520911664265234,
+        "s3_io": 1.3000000000000001e-05,
+        "total": 0.00015820911664265233
+      },
+      "cold_start": false
+    },
+    {
+      "round_id": 2,
+      "rep": 1,
+      "wall_clock_ms": 15512.9342299997,
+      "lambda_total_ms": 15485.902520000025,
+      "aggregation_ms": 13827.953342,
+      "s3_read_ms": 12498.500077999865,
+      "compute_ms": 1329.4532640001362,
+      "s3_write_ms": 1657.9307830000118,
+      "cost": {
+        "lambda_compute": 0.00011523317498255571,
+        "s3_io": 1.3000000000000001e-05,
+        "total": 0.0001282331749825557
+      },
+      "cold_start": false
+    },
+    {
+      "round_id": 2,
+      "rep": 2,
+      "wall_clock_ms": 14023.966056999598,
+      "lambda_total_ms": 14000.909155000016,
+      "aggregation_ms": 12751.487671999996,
+      "s3_read_ms": 11469.027686999965,
+      "compute_ms": 1282.4599850000304,
+      "s3_write_ms": 1249.4032509999897,
+      "cost": {
+        "lambda_compute": 0.00010626260979146117,
+        "s3_io": 1.3000000000000001e-05,
+        "total": 0.00011926260979146118
+      },
+      "cold_start": false
+    },
+    {
+      "round_id": 2,
+      "rep": 3,
+      "wall_clock_ms": 14213.300995000282,
+      "lambda_total_ms": 14189.13755600002,
+      "aggregation_ms": 12648.593704999996,
+      "s3_read_ms": 11318.595584999997,
+      "compute_ms": 1329.9981199999984,
+      "s3_write_ms": 1540.5258389999972,
+      "cost": {
+        "lambda_compute": 0.00010540515835156172,
+        "s3_io": 1.3000000000000001e-05,
+        "total": 0.00011840515835156172
+      },
+      "cold_start": false
+    },
+    {
+      "round_id": 2,
+      "rep": 4,
+      "wall_clock_ms": 15069.219521999912,
+      "lambda_total_ms": 15046.545466999987,
+      "aggregation_ms": 13855.342200000025,
+      "s3_read_ms": 12527.778495000006,
+      "compute_ms": 1327.5637050000187,
+      "s3_write_ms": 1191.185159999975,
+      "cost": {
+        "lambda_compute": 0.0001154614159223702,
+        "s3_io": 1.3000000000000001e-05,
+        "total": 0.0001284614159223702
+      },
+      "cold_start": false
+    }
+  ],
+  "cold_start_wall_ms": 24710.08519499992
+}
