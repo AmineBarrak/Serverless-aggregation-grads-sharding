@@ -43,7 +43,7 @@ replication-package/
 │   └── rq3_cross_architecture/     # RQ3: all 3 architectures × 4 model sizes
 ├── figures/
 │   ├── scripts/                    # Python scripts to generate paper figures
-│   └── generated/                  # Pre-generated figures (PDF + PNG)
+│   └── figures/                    # figures (PDF + PNG)
 ├── hpc/                            # SLURM scripts for HPC cluster execution
 ├── paper/                          # LaTeX source of the paper
 │   ├── 00.main2.tex                # Main document
