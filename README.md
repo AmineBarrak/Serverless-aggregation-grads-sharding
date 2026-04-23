@@ -1,7 +1,6 @@
 # Replication Package: GradsSharding
 
 **Paper:** *Shard the Gradient, Scale the Model: Serverless Federated Aggregation via Gradient Partitioning*
-**Venue:** IEEE IC2E 2026
 **Authors:** Amine Barrak (Oakland University)
 
 ## Overview
