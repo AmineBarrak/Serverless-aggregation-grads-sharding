@@ -139,15 +139,6 @@ python generate_rq1_figure.py         # Figure 2: RQ1 PS idle time
 python generate_paper_figures.py      # All figures
 ```
 
-## Building the Paper
-
-```bash
-cd paper
-pdflatex 00.main2.tex
-bibtex 00.main2
-pdflatex 00.main2.tex
-pdflatex 00.main2.tex
-```
 
 ## Key Results Summary
 
